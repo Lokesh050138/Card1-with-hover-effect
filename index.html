@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card1</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .mein-card {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            width: 240px;
+            height: 330px;
+            border: solid 5px white;
+            position: relative;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+            overflow: hidden;
+            position: absolute;
+            transform: perspective(500px);
+            transition: all .5s linear;
+        }
+
+        .card-header h2 {
+            margin: 0;
+            font-size: 70px;
+            font-weight: bold;
+            text-align: left;
+            color: #fcf7f7;
+            transition: color .5s ease;
+        }
+
+        .card-header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+            transition: color .5s ease;
+        }
+
+        .card-body {
+            margin: 20px 0;
+            color: #666;
+            transition: color .5s ease;
+        }
+
+        .card-footer button {
+            color: white;
+            background: linear-gradient(45deg, #b95ce4, #4f29cd);
+            font-weight: bold;
+            font-size: 14px;
+            padding: 10px;
+            border: none;
+            border-radius: 2rem;
+            box-shadow: 1px 5px 10px rgba(51, 49, 49, 0.274);
+        }
+
+        /* hover style */
+        .card:hover {
+            margin-top: -2rem;
+            background: linear-gradient(45deg, #b95ce4, #4f29cd);
+        }
+
+        /* Text color changes to white on hover */
+        
+        .card:hover .card-header h1,
+        .card:hover .card-body {
+            color: white;
+        }
+        .card:hover .card-footer button{
+            background-color: #be80db;
+        }
+        .card:hover .card-header h2{
+            color: #b95ce4;
+        }
+        .card-footer button:hover{
+            background: linear-gradient(45deg,#4f29cd,#b95ce4);
+        }
+        .mein-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),inset 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="mein-card">
+        <div class="card">
+            <div class="card-header">
+                <h2>01</h2>
+                <h1>Happy Birthday!</h1>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis neque magnam asperiores et quidem,
+                    facere
+                    vero dignissimos ad explicabo quos.</p>
+            </div>
+            <div class="card-footer">
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
